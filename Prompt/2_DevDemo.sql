@@ -18,17 +18,7 @@ an order can't be completed.
 -- add top 10
 -- code analysis issues
 -- format
-alter procedure dbo.GetUnshippedOrders
-as
-select OrderID
-     , CustomerID
-     , EmployeeID
-     , OrderDate
-     , RequiredDate
-     , ShippedDate
-from dbo.Orders
-where ShippedDate is null;
-go
+
 
 
 -- run code
